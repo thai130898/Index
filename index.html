@@ -11,8 +11,9 @@
             font-family: 'Inter', sans-serif;
             background-color: #f3f4f6; /* Light gray background */
         }
-        .link-card {
+        .link-card { /* This class is now applied to the <a> tag */
             transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+            display: flex; /* Ensure <a> behaves like a flex container */
         }
         .link-card:hover {
             transform: translateY(-4px);
@@ -42,38 +43,16 @@
         </header>
 
         <main id="linksSection">
-            <div class="link-card bg-white shadow-lg rounded-xl p-6 mb-6 flex items-center space-x-4 hover:bg-gray-50">
-                <div class="flex-shrink-0">
-                    <svg class="h-8 w-8 text-indigo-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 14h.01M12 17h.01M15 17h.01M9 10h.01M12 10h.01M15 10h.01M3 7a2 2 0 012-2h14a2 2 0 012 2v10a2 2 0 01-2 2H5a2 2 0 01-2-2V7z" />
-                    </svg>
-                </div>
-                <div>
-                    <h2 class="text-xl font-semibold text-gray-900">
-                        <a href="https://thai130898.github.io/Shipping-Calculator/" target="_blank" rel="noopener noreferrer" class="hover:underline focus:outline-none focus:ring-2 focus:ring-indigo-500 rounded-md">
-                            Shipping Calculator
-                        </a>
-                    </h2>
-                    <p class="text-gray-600 text-sm">Calculate shipping costs quickly and easily.</p>
-                </div>
-                <div class="ml-auto">
-                     <svg class="h-6 w-6 text-gray-400 group-hover:text-indigo-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-                    </svg>
-                </div>
-            </div>
-
-            <div class="link-card bg-white shadow-lg rounded-xl p-6 mb-6 flex items-center space-x-4 hover:bg-gray-50">
+            <a href="https://thai130898.github.io/Multi-Tracking-Link-Generator/" target="_blank" rel="noopener noreferrer" 
+               class="link-card group bg-white shadow-lg rounded-xl p-6 mb-6 items-center space-x-4 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-teal-500">
                 <div class="flex-shrink-0">
                     <svg class="h-8 w-8 text-teal-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1" />
                     </svg>
                 </div>
                 <div>
-                    <h2 class="text-xl font-semibold text-gray-900">
-                        <a href="https://thai130898.github.io/Multi-Tracking-Link-Generator/" target="_blank" rel="noopener noreferrer" class="hover:underline focus:outline-none focus:ring-2 focus:ring-teal-500 rounded-md">
-                            Multi-Tracking Link Generator
-                        </a>
+                    <h2 class="text-xl font-semibold text-gray-900 group-hover:underline">
+                        Multi-Tracking Link Generator
                     </h2>
                     <p class="text-gray-600 text-sm">Generate links for tracking multiple shipments.</p>
                 </div>
@@ -82,61 +61,38 @@
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
                     </svg>
                 </div>
-            </div>
+            </a>
 
-            <div class="link-card bg-white shadow-lg rounded-xl p-6 mb-6 flex items-center space-x-4 hover:bg-gray-50">
+            <a href="https://thai130898.github.io/Shipping-Calculator/" target="_blank" rel="noopener noreferrer" 
+               class="link-card group bg-white shadow-lg rounded-xl p-6 mb-6 items-center space-x-4 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
                 <div class="flex-shrink-0">
-                    <svg class="h-8 w-8 text-purple-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                    <svg class="h-8 w-8 text-indigo-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 14h.01M12 17h.01M15 17h.01M9 10h.01M12 10h.01M15 10h.01M3 7a2 2 0 012-2h14a2 2 0 012 2v10a2 2 0 01-2 2H5a2 2 0 01-2-2V7z" />
                     </svg>
                 </div>
                 <div>
-                    <h2 class="text-xl font-semibold text-gray-900">
-                        <a href="https://thai130898.github.io/VGM-Form/" target="_blank" rel="noopener noreferrer" class="hover:underline focus:outline-none focus:ring-2 focus:ring-purple-500 rounded-md">
-                            VGM Form
-                        </a>
+                    <h2 class="text-xl font-semibold text-gray-900 group-hover:underline">
+                        Shipping Calculator
                     </h2>
-                    <p class="text-gray-600 text-sm">Form for Verified Gross Mass (VGM) submissions.</p>
+                    <p class="text-gray-600 text-sm">Calculate shipping costs quickly and easily.</p>
                 </div>
-                 <div class="ml-auto">
-                    <svg class="h-6 w-6 text-gray-400 group-hover:text-purple-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <div class="ml-auto">
+                     <svg class="h-6 w-6 text-gray-400 group-hover:text-indigo-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
                     </svg>
                 </div>
-            </div>
+            </a>
 
-            <div class="link-card bg-white shadow-lg rounded-xl p-6 mb-6 flex items-center space-x-4 hover:bg-gray-50">
-                <div class="flex-shrink-0">
-                    <svg class="h-8 w-8 text-sky-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01" />
-                    </svg>
-                </div>
-                <div>
-                    <h2 class="text-xl font-semibold text-gray-900">
-                        <a href="https://thai130898.github.io/Sample-Request-Form/" target="_blank" rel="noopener noreferrer" class="hover:underline focus:outline-none focus:ring-2 focus:ring-sky-500 rounded-md">
-                            Bulk Sample Request Form
-                        </a>
-                    </h2>
-                    <p class="text-gray-600 text-sm">Request bulk samples using this online form.</p>
-                </div>
-                 <div class="ml-auto">
-                    <svg class="h-6 w-6 text-gray-400 group-hover:text-sky-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-                    </svg>
-                </div>
-            </div>
-
-            <div class="link-card bg-white shadow-lg rounded-xl p-6 mb-6 flex items-center space-x-4 hover:bg-gray-50">
+            <a href="https://thai130898.github.io/Fabric-Converter/" target="_blank" rel="noopener noreferrer" 
+               class="link-card group bg-white shadow-lg rounded-xl p-6 mb-6 items-center space-x-4 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-emerald-500">
                 <div class="flex-shrink-0">
                     <svg class="h-8 w-8 text-emerald-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a4 4 0 00-5.656 0L12 17.172l-1.772-1.772a4 4 0 10-5.656 5.656l1.772 1.772a4 4 0 005.656 0l5.428-5.428zM19.428 15.428L12 8.00001M5.571 8.00001L12 15.428m0-11.428a4 4 0 00-5.656 0L3 7.00001a4 4 0 000 5.656l3.344 3.344m11.312-8.484a4 4 0 000-5.656L15 3.00001a4 4 0 00-5.656 0l-1.06 1.06" />
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 8h16M4 16h16M8 4l4 4 4-4M8 20l4-4 4 4" />
                     </svg>
                 </div>
                 <div>
-                    <h2 class="text-xl font-semibold text-gray-900">
-                        <a href="https://thai130898.github.io/Fabric-Converter/" target="_blank" rel="noopener noreferrer" class="hover:underline focus:outline-none focus:ring-2 focus:ring-emerald-500 rounded-md">
-                            Fabric Converter
-                        </a>
+                    <h2 class="text-xl font-semibold text-gray-900 group-hover:underline">
+                        Fabric Converter
                     </h2>
                     <p class="text-gray-600 text-sm">Convert fabric measurements and units.</p>
                 </div>
@@ -145,11 +101,51 @@
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
                     </svg>
                 </div>
-            </div>
+            </a>
+
+            <a href="https://thai130898.github.io/VGM-Form/" target="_blank" rel="noopener noreferrer" 
+               class="link-card group bg-white shadow-lg rounded-xl p-6 mb-6 items-center space-x-4 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-purple-500">
+                <div class="flex-shrink-0">
+                    <svg class="h-8 w-8 text-purple-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                    </svg>
+                </div>
+                <div>
+                    <h2 class="text-xl font-semibold text-gray-900 group-hover:underline">
+                        VGM Form
+                    </h2>
+                    <p class="text-gray-600 text-sm">Form for Verified Gross Mass (VGM) submissions.</p>
+                </div>
+                 <div class="ml-auto">
+                    <svg class="h-6 w-6 text-gray-400 group-hover:text-purple-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                    </svg>
+                </div>
+            </a>
+            
+            <a href="https://thai130898.github.io/Sample-Request-Form/" target="_blank" rel="noopener noreferrer" 
+               class="link-card group bg-white shadow-lg rounded-xl p-6 mb-6 items-center space-x-4 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-sky-500">
+                <div class="flex-shrink-0">
+                    <svg class="h-8 w-8 text-sky-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01" />
+                    </svg>
+                </div>
+                <div>
+                    <h2 class="text-xl font-semibold text-gray-900 group-hover:underline">
+                        Bulk Sample Request Form
+                    </h2>
+                    <p class="text-gray-600 text-sm">Request bulk samples using this online form.</p>
+                </div>
+                 <div class="ml-auto">
+                    <svg class="h-6 w-6 text-gray-400 group-hover:text-sky-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                    </svg>
+                </div>
+            </a>
             </main>
 
         <footer class="mt-12 text-center text-gray-500 text-sm">
-            <p>&copy; <span id="currentYear"></span> Your Name. All rights reserved.</p>
+            <p>&copy; <span id="currentYear"></span> thai130898. All rights reserved.</p> 
             <p>Page designed to be simple and useful.</p>
         </footer>
     </div>
